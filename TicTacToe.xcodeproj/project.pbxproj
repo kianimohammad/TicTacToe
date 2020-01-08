@@ -13,6 +13,9 @@
 		1CB774A023C545EB00F8D21F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB7749E23C545EB00F8D21F /* Main.storyboard */; };
 		1CB774A223C545EC00F8D21F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB774A123C545EC00F8D21F /* Assets.xcassets */; };
 		1CB774A523C545EC00F8D21F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB774A323C545EC00F8D21F /* LaunchScreen.storyboard */; };
+		1CB774B023C546E600F8D21F /* nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB774AD23C546E600F8D21F /* nought.png */; };
+		1CB774B123C546E600F8D21F /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB774AE23C546E600F8D21F /* board.png */; };
+		1CB774B223C546E600F8D21F /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB774AF23C546E600F8D21F /* cross.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		1CB774A123C545EC00F8D21F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CB774A423C545EC00F8D21F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CB774A623C545EC00F8D21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CB774AD23C546E600F8D21F /* nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nought.png; sourceTree = "<group>"; };
+		1CB774AE23C546E600F8D21F /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
+		1CB774AF23C546E600F8D21F /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		1CB7749723C545EB00F8D21F /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				1CB774AC23C546DB00F8D21F /* res */,
 				1CB7749823C545EB00F8D21F /* AppDelegate.swift */,
 				1CB7749A23C545EB00F8D21F /* SceneDelegate.swift */,
 				1CB7749C23C545EB00F8D21F /* ViewController.swift */,
@@ -65,6 +72,16 @@
 				1CB774A623C545EC00F8D21F /* Info.plist */,
 			);
 			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		1CB774AC23C546DB00F8D21F /* res */ = {
+			isa = PBXGroup;
+			children = (
+				1CB774AE23C546E600F8D21F /* board.png */,
+				1CB774AF23C546E600F8D21F /* cross.png */,
+				1CB774AD23C546E600F8D21F /* nought.png */,
+			);
+			path = res;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +142,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB774B223C546E600F8D21F /* cross.png in Resources */,
 				1CB774A523C545EC00F8D21F /* LaunchScreen.storyboard in Resources */,
 				1CB774A223C545EC00F8D21F /* Assets.xcassets in Resources */,
+				1CB774B023C546E600F8D21F /* nought.png in Resources */,
+				1CB774B123C546E600F8D21F /* board.png in Resources */,
 				1CB774A023C545EB00F8D21F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
