@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var btnPlayAgain: UIButton!
+    
     var activePlayer = 1
     var activeGame = true
     var gameState = [0,0,0,0,0,0,0,0,0]
@@ -17,6 +20,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        btnPlayAgain.isHidden = true
     }
 
     @IBAction func btnPressed(_ sender: UIButton) {
@@ -39,22 +44,34 @@ class ViewController: UIViewController {
                 
                 // winner
                 activeGame = false
+                UIView.animate(withDuration: 1) {
+                    self.btnPlayAgain.center = CGPoint(x: self.btnPlayAgain.center.x + 500, y: self.btnPlayAgain.center.y)
+                }
+                btnPlayAgain.isHidden = false
+                resultLabel.isHidden = false
                 
                 if gameState[combination[0]] == 1 {
                     print("winner is nought")
-                    
+                    resultLabel.text = "winner is nought"
                     
                 } else {
                     print("winner is cross")
+                    resultLabel.text = "winner is cross"
                 }
                 
             }
         }
-        
-        
-        
-        
-        
+    }
+    @IBAction func playAgain(_ sender: UIButton) {
+        gameState = [0,0,0,0,0,0,0,0,0]
+        activeGame = true
+        for i in 1..<10 {
+            if let button = view.viewWithTag(i) as? UIButton {
+                button.setImage(nil, for: [])
+            }
+        }
+        btnPlayAgain.isHidden = true
+        resultLabel.isHidden = true
     }
     
 }

@@ -101,13 +101,32 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odk-gN-tVg">
+                                <rect key="frame" x="50" y="81" width="275" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUh-dZ-pwE">
+                                <rect key="frame" x="98" y="303.5" width="179" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bz-gm-PD7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="W8M-oT-ies" firstAttribute="bottom" secondItem="Dps-sL-jUd" secondAttribute="bottom" id="3lU-oP-7fG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Odk-gN-tVg" secondAttribute="trailing" constant="50" id="FBM-HM-TQP"/>
+                            <constraint firstItem="sUh-dZ-pwE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Lp5-Sd-npw"/>
+                            <constraint firstItem="Odk-gN-tVg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="RZN-WJ-2oN"/>
                             <constraint firstItem="Dps-sL-jUd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="SBR-GQ-leG"/>
+                            <constraint firstItem="sUh-dZ-pwE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WFk-MB-9LQ"/>
                             <constraint firstItem="W8M-oT-ies" firstAttribute="top" secondItem="Dps-sL-jUd" secondAttribute="top" id="XaJ-cp-zab"/>
                             <constraint firstItem="W8M-oT-ies" firstAttribute="leading" secondItem="Dps-sL-jUd" secondAttribute="leading" id="fts-IS-q50"/>
+                            <constraint firstItem="W8M-oT-ies" firstAttribute="top" secondItem="Odk-gN-tVg" secondAttribute="bottom" constant="69" id="hXn-uv-41E"/>
                             <constraint firstItem="W8M-oT-ies" firstAttribute="trailing" secondItem="Dps-sL-jUd" secondAttribute="trailing" id="ixD-iZ-6KH"/>
                             <constraint firstItem="Dps-sL-jUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="pzm-Ol-3qG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dps-sL-jUd" secondAttribute="bottom" constant="150" id="u0s-fE-P50"/>
@@ -115,6 +134,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btnPlayAgain" destination="sUh-dZ-pwE" id="jJY-Mt-pdt"/>
+                        <outlet property="resultLabel" destination="Odk-gN-tVg" id="bhb-yN-NIy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
